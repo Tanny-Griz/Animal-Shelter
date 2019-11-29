@@ -18,6 +18,14 @@ body {
     padding: 0 15px;
 }
 
+.wrapper {
+    min-width: 320px;
+}
+
+.menu {
+    display: none;
+}
+
 .text-center {
     text-align: center;
 }
@@ -31,12 +39,8 @@ img {
 
 .holder-menu {
     display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-    float: left;
-    margin-bottom: 20px;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -49,74 +53,37 @@ h1 {
     font-weight: 300;
 }
 
-.menu {
-    float: right;
-    margin-top: 20px;
-}
-
-.menu ul {
-    list-style: none;
-}
-
-.menu ul li {
-    display: inline-block;
-}
-
-.menu ul li a {
-    display: inline-block;
-    margin: 0 auto;
-    text-decoration: none;
-    padding: 16px 20px;
-    font-size: 18px;
-    font-weight: 300;
-}
-
-.menu ul li a:hover {
-    color: #838383;
-}
-
-.active:hover {
-    border: none;
-}
-
-.active {
-    border-bottom: 3px solid #f7df59;
-}
-
-.menu a:hover {
-    border-bottom: 3px solid #f7df59;
-}
+/* -------MAIN--------------------------------- */
 
 main {
     background-color: #f6f6f6;
 }
 
 .depiction {
-    padding: 50px 0 40px;
+    padding: 18px 0;
 }
 
 .depiction h2 {
     text-align: center;
     font-family: Georgia Regular;
-    font-size: 35px;
+    font-size: 30px;
 }
 
-.holder {
+.holder-pets {
     font-size: 0;
     margin: 0 -15px;
 }
 
-.col  {
+.col-pets {
     display: inline-block;
     padding: 0 15px;
-    width: 25%;
-    font-size: 18px;
+    width: 50%;
 }
 
 .item {
     text-align: center;
-    padding: 20px 20px 0;
-    margin: 0 0 30px;
+    padding: 10px 15px;
+    margin: 0 0 25px;
     border-radius: 5px;
     background-color: #fafafa;
 }
@@ -127,7 +94,7 @@ main {
 
 .item:hover {
     background-color: #fff;
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .item img {
@@ -155,10 +122,10 @@ figcaption {
 }
 
 .learn-more {
-    font-size: 12px;
+    font-size: 10px;
     text-decoration: none;
-    margin: 18px auto;
-    padding: 10px 30px;
+    margin: 0 auto;
+    padding: 7px 16px;
     border-radius: 26px;
     color: #0c0c0c;
     background-color: #fafafa;
@@ -171,15 +138,17 @@ figcaption {
 }
 
 .go-to-page {
-    padding: 10px 0 20px;
+    padding: 10px 0;
 }
 
 .go-to-page ul {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 0;
 }
 
 .go-to-page ul li {
-    display: inline-block;
+    padding: 0 2px;
 }
 
 .page {
@@ -187,11 +156,12 @@ figcaption {
     vertical-align: top;
     width: 33px;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 100px;
     text-align: center;
     padding: 5px 0;
     border: 2px solid #f1cdb3;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .page:hover {
@@ -206,17 +176,24 @@ footer {
 
 .holder-contacts {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     font-family: Georgia Regular;
+    padding: 20px 0;
 }
 
 .contacts {
-    width: 33.33%;
-    padding: 20px 0;
+    width: 50%;
+    padding: 0 10px;
 }
 
 .contacts h2 {
     color: #dfdfdf;
+    font-size: 18px;
+}
+
+.contacts p {
+    font-size: 14px;
 }
 
 .contacts a {
@@ -234,8 +211,263 @@ footer {
 }
 
 i {
-    font-size: 26px;
+    font-size: 15px;
     color: #f1cdb3;
+}
+
+/*----------------------- MODAL -------------------------*/
+
+.popup-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.popup-content {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.popup-content h2 {
+    font-size: 18px;
+}
+
+.popup-content span {
+    font-size: 12px;
+}
+
+.popup-content p {
+    font-size: 10px;
+}
+
+.popup-content ul {
+    font-size: 0;
+    padding-left: 15px;
+}
+
+.popup-content ul li {
+    font-size: 14px;
+}
+
+.hide {
+    display: none;
+}
+
+.popup-left {
+    width: 50%;
+    padding: 5% 0;
+}
+
+.popup-right {
+    text-align: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.popup-content .close {
+    position: absolute;
+    font-size: 35px;
+    top: 0;
+    right: 16px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    cursor: pointer;
+}
+
+/*----------------------- close MODAL -------------------------*/
+
+@media screen and (min-width: 480px) {
+    .learn-more {
+        font-size: 12px;
+        padding: 9px 17px;
+    }
+
+    .name {
+        padding: 5px 0;
+    }
+
+    .popup-content h2 {
+        font-size: 20px;
+    }
+
+    .popup-content span {
+        font-size: 16px;
+    }
+
+    .popup-content p {
+        font-size: 12px;
+    } 
+
+    i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .holder-menu {
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+    }
+
+    .logo {
+        width: 35%;
+    }
+
+    nav ul {
+        display: flex;
+        font-size: 0;
+        list-style: none;
+        padding: 0;
+    }
+
+    nav li a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 5px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    nav li a:hover {
+        color: #838383;
+    }
+
+    .active:hover {
+        border: none;
+    }
+
+    .active {
+        border-bottom: 3px solid #f7df59;
+    }
+
+    .menu a:hover {
+        border-bottom: 3px solid #f7df59;
+    }
+
+    .col-pets {
+        width: 33.33%;
+    }
+
+    .popup-content h2 {
+        font-size: 24px;
+    }
+
+    .popup-content p {
+        font-size: 15px;
+    }
+
+    .popup-content ul li {
+        font-size: 14px;
+    }
+
+    .name {
+        padding: 10px 0;
+    }
+
+    .button {
+        padding: 5px 0;
+    }
+
+    .learn-more {
+        font-size: 14px;
+        padding: 10px 26px;
+    }
+
+    .popup-content h2 {
+        font-size: 24px;
+    }
+
+    .popup-content span {
+        font-size: 18px;
+    }
+
+    .popup-content ul li {
+        font-size: 16px;
+    }
+
+    i {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        justify-content: flex-end;
+    }
+
+    nav li a {
+        padding: 11px 10px;
+        font-size: 18px;
+    }
+
+    .depiction {
+        padding: 25px 0;
+    }
+
+    .col-pets {
+        width: 25%;
+    }
+
+    .learn-more {
+        font-size: 14px;
+        padding: 13px 33px;
+    }
+
+    .popup-content {
+        width: 60%;
+    }
+
+    .popup-content h2 {
+        font-size: 34px;
+    }
+
+    .go-to-page {
+        padding: 34px 0;
+    }
+
+    .page {
+        width: 38px;
+        font-size: 20px;
+    }
+
+    .holder-contacts {
+        padding: 35px 0;
+    }
+
+    .contacts h2 {
+        font-size: 32px;
+    }
+
+    .contacts p {
+        font-size: 18px;
+    }
+
 }
 
 /* -----------------------------ABOUT----------------------------- */
@@ -244,6 +476,10 @@ i {
     background-image: url('../images/header-bg-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.wrapper {
+    min-width: 320px;
 }
 
 .about-the-shelter h1 {
@@ -284,11 +520,8 @@ i {
     margin-bottom: 40px;
 }
 
-.photo-dog {
-    width: 50%;
-}
-
-.make-friend, .button-get-know {
+.make-friend,
+.button-get-know {
     font-size: 12px;
     text-decoration: none;
     padding: 10px 30px;
@@ -299,13 +532,15 @@ i {
     margin: 18px 0;
 }
 
-.button-make-friend a, .get-know a {
+.button-make-friend a,
+.get-know a {
     color: #292929;
     font-family: georgia;
     font-size: 17px;
 }
 
-.button-make-friend a:hover, .get-know a:hover {
+.button-make-friend a:hover,
+.get-know a:hover {
     background-color: #fdeadd;
 }
 
@@ -392,66 +627,9 @@ i {
     color: #545454;
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
     font-size: 35px;
     color: #f1cdb3;
     opacity: 0.7;
 }
-
-/*----------------------- MODAL -------------------------*/
-
-.popup-wrap {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.6);
-}
-
- .popup-content {
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
-    width: 35%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    border-radius: 10px;
-    position: relative;
-}
-
-.hide {
-    display: none;
-}
-
-.popup-left {
-    width: 50%;
-    padding-top: 5%;
-}
-
-.popup-right {
-    text-align: left;
-    width: 50%;
-}
-
-.close {
-    position: absolute;
-    font-size: 43px;
-    top: 0;
-    right: 16px;
-    bottom: 0;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    cursor: pointer;
-}
-
