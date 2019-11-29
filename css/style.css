@@ -44,12 +44,12 @@ img {
 .holder-menu {
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 h1 {
     font-size: 36px;
-    margin: 20px 0 0;
+    margin: 0;
 }
 
 .logo span {
@@ -67,6 +67,10 @@ h2 {
     text-align: center;
     font-family: Georgia Regular;
     font-size: 30px;
+}
+
+.holder-looking-pets {
+    padding: 10px 0 10px;
 }
 
 .holder-pets {
@@ -327,7 +331,6 @@ i {
 
 .holder-banner {
     display: flex;
-    
 }
 
 .banner-text {
@@ -548,6 +551,14 @@ i {
         font-size: 20px;
     }
 
+    figcaption {
+        font-size: 13px;
+    }
+
+    .holder-looking-pets {
+        padding: 20px 0 20px;
+    }
+
     /* About the shelter */
 
     .holder-menu {
@@ -593,7 +604,6 @@ i {
 @media screen and (min-width: 768px) {
     .holder-menu {
         justify-content: space-between;
-        padding: 20px 0;
     }
 
     .menu {
@@ -682,6 +692,10 @@ i {
 
     i {
         font-size: 24px;
+    }
+
+    figcaption {
+        font-size: 16px;
     }
 
     /* About the shelter */
@@ -812,6 +826,18 @@ i {
         font-size: 18px;
     }
 
+    figcaption {
+        font-size: 20px;
+    }
+
+    .button-make-friend a, .get-know a {
+        font-size: 17px;
+    }
+
+    .make-friend, .button-get-know {
+        padding: 10px 36px;
+    }
+
     /* About the shelter */
 
     .banner-text h2 {
@@ -830,6 +856,7 @@ i {
 
     .col-about {
         padding: 75px 0;
+        max-width: 930px;
     }
 
     .holder-looking-house {
@@ -844,6 +871,10 @@ i {
         width: 272px;
     }
 
+    .holder-looking-pets {
+        padding: 30px 0 40px;
+    }
+    
     h2 {
         font-size: 45px;
     }
