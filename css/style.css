@@ -4,6 +4,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,17 +57,13 @@ h1 {
     font-weight: 300;
 }
 
-/* -------MAIN--------------------------------- */
+/*  MAIN  */
 
 main {
     background-color: #f6f6f6;
 }
 
-.depiction {
-    padding: 18px 0;
-}
-
-.depiction h2 {
+h2 {
     text-align: center;
     font-family: Georgia Regular;
     font-size: 30px;
@@ -76,6 +76,7 @@ main {
 
 .col-pets {
     display: inline-block;
+    vertical-align: top;
     padding: 0 15px;
     width: 50%;
 }
@@ -90,6 +91,7 @@ main {
 
 .slick-slide .item img {
     display: inline-block;
+    vertical-align: top;
 }
 
 .item:hover {
@@ -215,7 +217,7 @@ i {
     color: #f1cdb3;
 }
 
-/*----------------------- MODAL -------------------------*/
+/* MODAL */
 
 .popup-wrap {
     display: flex;
@@ -293,7 +295,232 @@ i {
     cursor: pointer;
 }
 
-/*----------------------- close MODAL -------------------------*/
+/* end MODAL */
+
+/* ABOUT */
+
+.about-the-shelter {
+    background-image: url('../images/header-bg-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    min-width: 320px;
+}
+
+.about-the-shelter h1 {
+    color: #f1cdb3;
+}
+
+.about-the-shelter span {
+    color: #fff;
+}
+
+.dark h1 {
+    color: #f1cdb3;
+}
+
+.about-the-shelter a {
+    color: #cdcdcd;
+}
+
+.holder-banner {
+    display: flex;
+    
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-text h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.banner-text span {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.5;
+    color: #cdcdcd;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.button-make-friend {
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    padding-bottom: 40px;
+}
+
+.make-friend,
+.button-get-know {
+    font-size: 12px;
+    text-decoration: none;
+    padding: 8px 24px;
+    border-radius: 26px;
+    background-color: #f1cdb3;
+    border: 2px solid #f1cdb3;
+    cursor: pointer;
+}
+
+.button-make-friend a,
+.get-know a {
+    display: inline-block;
+    vertical-align: top;
+    color: #292929;
+    font-family: georgia;
+    font-size: 15px;
+}
+
+.button-make-friend a:hover,
+.get-know a:hover {
+    background-color: #fdeadd;
+}
+
+.get-know {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.description-shelter {
+    background-color: #fafafa;
+}
+
+.holder-help {
+    padding: 10px 0;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.multiple-items .item {
+    padding: 10px 5px;
+    margin: 0;
+}
+
+.multiple-items .button {
+    padding: 5px 0;
+}
+
+figcaption {
+    font-size: 9px;
+    padding: 5px 0;
+}
+
+.multiple-items .learn-more {
+    font-size: 7px;
+    padding: 3px 14px;
+}
+
+.holder-items-help {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.item-help {
+    width: 50%;
+}
+
+.col-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.desc-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.desc-image {
+    width: 150px;
+}
+
+.desc-text p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-text span {
+    text-align: center;
+}
+
+.you-help {
+    background-color: #fafafa;
+}
+
+.text-help {
+    text-align: center;
+}
+
+.img-help {
+    text-align: center;
+}
+
+.desc-text span {
+    font-family: Georgia Regular;
+    font-size: 15px;
+}
+
+.cart p {
+    padding: 10px 15px;
+    background-color: #f1cdb3;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 248px;
+}
+
+.cart span {
+    font-family: Arial;
+    font-style: italic;
+    font-size: 12px;
+    color: #b2b2b2;
+}
+
+i {
+    color: #545454;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 35px;
+    color: #f1cdb3;
+    opacity: 0.7;
+}
+
+
+.slick-prev:before, .slick-next:before {
+    font-size: 20px;
+}
+
+.slick-next {
+    right: 16px;
+}
+
+.slick-prev {
+    left: 6px;
+    z-index: 2;
+}
+
+/* end ABOUT */
 
 @media screen and (min-width: 480px) {
     .learn-more {
@@ -320,6 +547,47 @@ i {
     i {
         font-size: 20px;
     }
+
+    /* About the shelter */
+
+    .holder-menu {
+        justify-content: flex-start;
+    }
+
+    .banner-text h2, .banner-text span {
+        text-align: left;
+    }
+
+    .button-make-friend {
+        justify-content: flex-start;
+    }
+
+    .desc-image {
+        width: 120px;
+    }
+
+    .multiple-items .learn-more {
+        font-size: 11px;
+        padding: 5px 18px;
+    }
+
+    .item-help {
+        width: 33.33%;
+    }
+
+    .desc-image {
+        width: 150px;
+    }
+
+    .contacts h2 {
+        text-align: left;
+    }
+
+    .holder-help {
+        padding: 15px 0;
+    }
+
+    /* end About the shelter */
 }
 
 @media screen and (min-width: 768px) {
@@ -348,6 +616,7 @@ i {
 
     nav li a {
         display: inline-block;
+        vertical-align: top;
         text-decoration: none;
         padding: 10px 5px;
         font-size: 16px;
@@ -414,6 +683,85 @@ i {
     i {
         font-size: 24px;
     }
+
+    /* About the shelter */
+
+    .banner-text {
+        width: 60%;
+    }
+
+    .holder-banner {
+        padding: 15px 0;
+    }
+
+    .col-about {
+        flex-direction: row;
+    }
+
+    .desc-image {
+        width: 50%;
+        padding: 0 15px;
+    }
+
+    .desc-text {
+        width: 50%;
+    }
+
+    .multiple-items .learn-more {
+        font-size: 15px;
+        padding: 8px 26px;
+    }
+
+    .get-know {
+        padding: 30px 0;
+    }
+
+    .holder-items-help {
+        padding: 20px 0;
+    }
+
+    .desc-text h2 {
+        margin: 0 0 20px;
+    }
+
+    .desc-text h2, .desc-text span {
+        text-align: left;
+    }
+
+    .cart {
+        align-items: flex-start;
+    }
+
+    .holder-contacts {
+        padding: 25px 0;
+    }
+
+    .contacts h2 {
+        font-size: 24px;
+    }
+
+    .contacts p {
+        font-size: 16px;
+    }
+
+    .slick-prev:before, .slick-next:before {
+        font-size: 30px;
+    }
+
+    .multiple-items .item {
+        width: 200px;
+    }
+
+    .item-help {
+        width: 20%;
+        margin-bottom: 20px;
+    }
+
+    .holder-help {
+        padding: 20px 0;
+    }
+
+    /* end About the shelter */
 }
 
 @media screen and (min-width: 1024px) {
@@ -424,10 +772,6 @@ i {
     nav li a {
         padding: 11px 10px;
         font-size: 18px;
-    }
-
-    .depiction {
-        padding: 25px 0;
     }
 
     .col-pets {
@@ -468,168 +812,57 @@ i {
         font-size: 18px;
     }
 
+    /* About the shelter */
+
+    .banner-text h2 {
+        font-size: 36px;
+        font-family: Georgia Regular;
+        line-height: 1.5;
+    }
+
+    .banner-text {
+        width: 45%;
+    }
+
+    .holder-banner {
+        padding: 52px 0;
+    }
+
+    .col-about {
+        padding: 75px 0;
+    }
+
+    .holder-looking-house {
+        padding: 30px 0 40px;
+    }
+
+    .holder-pets {
+        margin-bottom: 30px;
+    }
+
+    .multiple-items .item {
+        width: 272px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    .item-help {
+        margin-bottom: 40px;
+    }
+
+    .holder-help {
+        padding: 50px 0;
+    }
+
+    /* end About the shelter */
+
 }
 
-/* -----------------------------ABOUT----------------------------- */
-
-.about-the-shelter {
-    background-image: url('../images/header-bg-2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+@media screen and (min-width: 1300px) {
+    .holder-banner {
+        padding: 130px 0;
+    }
 }
 
-.wrapper {
-    min-width: 320px;
-}
-
-.about-the-shelter h1 {
-    color: #f1cdb3;
-}
-
-.about-the-shelter span {
-    color: #fff;
-}
-
-.dark h1 {
-    color: #f1cdb3;
-}
-
-.about-the-shelter a {
-    color: #cdcdcd;
-}
-
-.main-photo {
-    display: flex;
-    justify-content: space-between;
-}
-
-.main-text {
-    width: 50%;
-}
-
-.main-text h2 {
-    max-width: 200px;
-    margin-top: 80px;
-    color: #fff;
-}
-
-.main-text span {
-    display: inline-block;
-    line-height: 1.5;
-    color: #cdcdcd;
-    margin-bottom: 40px;
-}
-
-.make-friend,
-.button-get-know {
-    font-size: 12px;
-    text-decoration: none;
-    padding: 10px 30px;
-    border-radius: 26px;
-    background-color: #f1cdb3;
-    border: 2px solid #f1cdb3;
-    cursor: pointer;
-    margin: 18px 0;
-}
-
-.button-make-friend a,
-.get-know a {
-    color: #292929;
-    font-family: georgia;
-    font-size: 17px;
-}
-
-.button-make-friend a:hover,
-.get-know a:hover {
-    background-color: #fdeadd;
-}
-
-.get-know {
-    text-align: center;
-    padding-top: 20px;
-    margin-bottom: 50px;
-}
-
-.description-shelter {
-    background-color: #fafafa;
-}
-
-.col-about {
-    display: flex;
-    margin: 0 auto;
-    max-width: 875px;
-    padding: 76px 0;
-}
-
-.desc-image {
-    width: 50%;
-    padding-right: 20px;
-}
-
-.desc-text {
-    width: 50%;
-}
-
-.desc-text p {
-    line-height: 1.6;
-}
-
-.desc-text h2 {
-    font-family: Georgia Regular;
-    font-size: 35px;
-}
-
-.you-help {
-    background-color: #fafafa;
-}
-
-.holder-help {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.item-help {
-    margin: 0 60px 50px;
-}
-
-.text-help {
-    text-align: center;
-}
-
-.img-help {
-    text-align: center;
-}
-
-.desc-text span {
-    font-family: Georgia Regular;
-    font-size: 15px;
-}
-
-.cart p {
-    padding: 10px 15px;
-    background-color: #f1cdb3;
-    border-radius: 8px;
-    font-size: 15px;
-    width: 248px;
-}
-
-.cart span {
-    font-family: Arial;
-    font-style: italic;
-    font-size: 12px;
-    color: #b2b2b2;
-}
-
-i {
-    color: #545454;
-}
-
-.slick-prev:before,
-.slick-next:before {
-    font-size: 35px;
-    color: #f1cdb3;
-    opacity: 0.7;
-}
