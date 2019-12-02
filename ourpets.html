@@ -12,6 +12,8 @@
       rel="stylesheet"
       href="fontawesome/fontawesome-free-5.11.2-web/css/all.css"
     />
+    <link rel="stylesheet" href="css/hamburgers.css" />
+    <link rel="stylesheet" href="css/mmenu.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Our pets</title>
   </head>
@@ -25,15 +27,34 @@
               <h1>Cozy House</h1>
               <span>Shelter for pets in Ukraine</span>
             </div>
-            <div class="menu">
+            <div class="header-menu">
               <nav>
                 <ul>
                   <li><a href="index.html">About the shelter</a></li>
-                  <li class="active"><a href="#">Our pets</a></li>
+                  <li class="active"><a href="ourpets.html">Our pets</a></li>
                   <li><a href="#">To help the shelter</a></li>
                   <li><a href="#">Contacts</a></li>
                 </ul>
               </nav>
+            </div>
+            <nav id="my-menu">
+              <ul>
+                <li class="active"><a href="index.html">About the shelter</a></li>
+                <li><a href="ourpets.html">Our pets</a></li>
+                <li><a href="#">To help the shelter</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </nav>
+            <div class="burger dark-burger">
+              <a
+                href="#my-menu"
+                class="hamburger hamburger--squeeze"
+                id="mmenu-icon"
+              >
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -42,368 +63,386 @@
         <section>
           <div class="holder-looking-pets">
             <div class="container">
-          <div class="depiction">
-            <h2>
-              Our friends who<br />
-              are looking for a house
-            </h2>
-          </div>
-          <div class="holder-pets">
-            <div class="col-pets">
-              <figure class="item">
-                <img src="images/cat-katrina.jpg" alt="animal-shelter" />
-                <figcaption class="desc">
-                  <div class="name text-center">
-                    <span>Katrine</span>
-                  </div>
-                  <div class="button">
-                    <a
-                      href="#"
-                      class="learn-more popup-show"
-                      data-popup="#pop-in"
-                      >Learn More</a
-                    >
-                  </div>
-                </figcaption>
-                <div class="popup-wrap hide" id="pop-in">
-                  <div class="popup-content">
-                    <div class="popup-left">
-                      <img src="images/cat-katrina.jpg" alt="animal-shelter" />
+              <div class="depiction">
+                <h2>
+                  Our friends who<br />
+                  are looking for a house
+                </h2>
+              </div>
+              <div class="holder-pets">
+                <div class="col-pets">
+                  <figure class="item">
+                    <img src="images/cat-katrina.jpg" alt="animal-shelter" />
+                    <figcaption class="desc">
+                      <div class="name text-center">
+                        <span>Katrine</span>
+                      </div>
+                      <div class="button">
+                        <a
+                          href="#"
+                          class="learn-more popup-show"
+                          data-popup="#pop-in"
+                          >Learn More</a
+                        >
+                      </div>
+                    </figcaption>
+                    <div class="popup-wrap hide" id="pop-in">
+                      <div class="popup-content">
+                        <div class="popup-left">
+                          <img
+                            src="images/cat-katrina.jpg"
+                            alt="animal-shelter"
+                          />
+                        </div>
+                        <div class="popup-right">
+                          <h2>Katrine</h2>
+                          <span>Сat Breed</span>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Rerum incidunt, minus qui corrupti, omnis
+                            accusantium. Laboriosam voluptatem, in est quod sint
+                            officia qui accusantium id, quis. Ad iusto, quaerat
+                            nobis.
+                          </p>
+                          <ul>
+                            <li>Age: 2 months</li>
+                            <li>Inoculations: none</li>
+                            <li>Diseases: none</li>
+                            <li>Parasites: none</li>
+                          </ul>
+                        </div>
+                        <span class="close">&times;</span>
+                      </div>
                     </div>
-                    <div class="popup-right">
-                      <h2>Katrine</h2>
-                      <span>Сat Breed</span>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Rerum incidunt, minus qui corrupti, omnis
-                        accusantium. Laboriosam voluptatem, in est quod sint
-                        officia qui accusantium id, quis. Ad iusto, quaerat
-                        nobis.
-                      </p>
-                      <ul>
-                        <li>Age: 2 months</li>
-                        <li>Inoculations: none</li>
-                        <li>Diseases: none</li>
-                        <li>Parasites: none</li>
-                      </ul>
-                    </div>
-                    <span class="close">&times;</span>
-                  </div>
+                  </figure>
                 </div>
-              </figure>
-            </div>
-            <div class="col-pets">
-              <figure class="item">
-                <img src="images/jennifer.jpg" alt="animal-shelter" />
-                <figcaption class="desc">
-                  <div class="name text-center">
-                    <span>Jennifer</span>
-                  </div>
-                  <div class="button">
-                    <a
-                      href="#"
-                      class="learn-more popup-show"
-                      data-popup="#pop2-in"
-                      >Learn More</a
-                    >
-                  </div>
-                </figcaption>
-                <div class="popup-wrap hide" id="pop2-in">
-                  <div class="popup-content">
-                    <div class="popup-left">
-                      <img src="images/jennifer.jpg" alt="animal-shelter" />
+                <div class="col-pets">
+                  <figure class="item">
+                    <img src="images/jennifer.jpg" alt="animal-shelter" />
+                    <figcaption class="desc">
+                      <div class="name text-center">
+                        <span>Jennifer</span>
+                      </div>
+                      <div class="button">
+                        <a
+                          href="#"
+                          class="learn-more popup-show"
+                          data-popup="#pop2-in"
+                          >Learn More</a
+                        >
+                      </div>
+                    </figcaption>
+                    <div class="popup-wrap hide" id="pop2-in">
+                      <div class="popup-content">
+                        <div class="popup-left">
+                          <img src="images/jennifer.jpg" alt="animal-shelter" />
+                        </div>
+                        <div class="popup-right">
+                          <h2>Jennifer</h2>
+                          <span>Breed</span>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Rerum incidunt, minus qui corrupti, omnis
+                            accusantium. Laboriosam voluptatem, in est quod sint
+                            officia qui accusantium id, quis. Ad iusto, quaerat
+                            nobis.
+                          </p>
+                          <ul>
+                            <li>Age: 2 months</li>
+                            <li>Inoculations: none</li>
+                            <li>Diseases: none</li>
+                            <li>Parasites: none</li>
+                          </ul>
+                        </div>
+                        <span class="close">&times;</span>
+                      </div>
                     </div>
-                    <div class="popup-right">
-                      <h2>Jennifer</h2>
-                      <span>Breed</span>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Rerum incidunt, minus qui corrupti, omnis
-                        accusantium. Laboriosam voluptatem, in est quod sint
-                        officia qui accusantium id, quis. Ad iusto, quaerat
-                        nobis.
-                      </p>
-                      <ul>
-                        <li>Age: 2 months</li>
-                        <li>Inoculations: none</li>
-                        <li>Diseases: none</li>
-                        <li>Parasites: none</li>
-                      </ul>
-                    </div>
-                    <span class="close">&times;</span>
-                  </div>
+                  </figure>
                 </div>
-              </figure>
-            </div>
-            <div class="col-pets">
-              <figure class="item">
-                <img src="images/dog-woody.png" alt="animal-shelter" />
-                <figcaption class="desc">
-                  <div class="name text-center">
-                    <span>Woody</span>
-                  </div>
-                  <div class="button">
-                    <a
-                      href="#"
-                      class="learn-more popup-show"
-                      data-popup="#pop3-in"
-                      >Learn More</a
-                    >
-                  </div>
-                </figcaption>
-                <div class="popup-wrap hide" id="pop3-in">
-                  <div class="popup-content">
-                    <div class="popup-left">
-                      <img src="images/dog-woody.png" alt="animal-shelter" />
+                <div class="col-pets">
+                  <figure class="item">
+                    <img src="images/dog-woody.png" alt="animal-shelter" />
+                    <figcaption class="desc">
+                      <div class="name text-center">
+                        <span>Woody</span>
+                      </div>
+                      <div class="button">
+                        <a
+                          href="#"
+                          class="learn-more popup-show"
+                          data-popup="#pop3-in"
+                          >Learn More</a
+                        >
+                      </div>
+                    </figcaption>
+                    <div class="popup-wrap hide" id="pop3-in">
+                      <div class="popup-content">
+                        <div class="popup-left">
+                          <img
+                            src="images/dog-woody.png"
+                            alt="animal-shelter"
+                          />
+                        </div>
+                        <div class="popup-right">
+                          <h2>Woody</h2>
+                          <span>Breed</span>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Rerum incidunt, minus qui corrupti, omnis
+                            accusantium. Laboriosam voluptatem, in est quod sint
+                            officia qui accusantium id, quis. Ad iusto, quaerat
+                            nobis.
+                          </p>
+                          <ul>
+                            <li>Age: 2 months</li>
+                            <li>Inoculations: none</li>
+                            <li>Diseases: none</li>
+                            <li>Parasites: none</li>
+                          </ul>
+                        </div>
+                        <span class="close">&times;</span>
+                      </div>
                     </div>
-                    <div class="popup-right">
-                      <h2>Woody</h2>
-                      <span>Breed</span>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Rerum incidunt, minus qui corrupti, omnis
-                        accusantium. Laboriosam voluptatem, in est quod sint
-                        officia qui accusantium id, quis. Ad iusto, quaerat
-                        nobis.
-                      </p>
-                      <ul>
-                        <li>Age: 2 months</li>
-                        <li>Inoculations: none</li>
-                        <li>Diseases: none</li>
-                        <li>Parasites: none</li>
-                      </ul>
-                    </div>
-                    <span class="close">&times;</span>
-                  </div>
+                  </figure>
                 </div>
-              </figure>
-            </div>
-            <div class="col-pets">
-              <figure class="item">
-                <img src="images/dog-sophia.jpg" alt="animal-shelter" />
-                <figcaption class="desc">
-                  <div class="name text-center">
-                    <span>Sophia</span>
-                  </div>
-                  <div class="button">
-                    <a
-                      href="#"
-                      class="learn-more popup-show"
-                      data-popup="#pop4-in"
-                      >Learn More</a
-                    >
-                  </div>
-                </figcaption>
-                <div class="popup-wrap hide" id="pop4-in">
-                  <div class="popup-content">
-                    <div class="popup-left">
-                      <img src="images/dog-sophia.jpg" alt="animal-shelter" />
+                <div class="col-pets">
+                  <figure class="item">
+                    <img src="images/dog-sophia.jpg" alt="animal-shelter" />
+                    <figcaption class="desc">
+                      <div class="name text-center">
+                        <span>Sophia</span>
+                      </div>
+                      <div class="button">
+                        <a
+                          href="#"
+                          class="learn-more popup-show"
+                          data-popup="#pop4-in"
+                          >Learn More</a
+                        >
+                      </div>
+                    </figcaption>
+                    <div class="popup-wrap hide" id="pop4-in">
+                      <div class="popup-content">
+                        <div class="popup-left">
+                          <img
+                            src="images/dog-sophia.jpg"
+                            alt="animal-shelter"
+                          />
+                        </div>
+                        <div class="popup-right">
+                          <h2>Sophia</h2>
+                          <span>Breed</span>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Rerum incidunt, minus qui corrupti, omnis
+                            accusantium. Laboriosam voluptatem, in est quod sint
+                            officia qui accusantium id, quis. Ad iusto, quaerat
+                            nobis.
+                          </p>
+                          <ul>
+                            <li>Age: 2 months</li>
+                            <li>Inoculations: none</li>
+                            <li>Diseases: none</li>
+                            <li>Parasites: none</li>
+                          </ul>
+                        </div>
+                        <span class="close">&times;</span>
+                      </div>
                     </div>
-                    <div class="popup-right">
-                      <h2>Sophia</h2>
-                      <span>Breed</span>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Rerum incidunt, minus qui corrupti, omnis
-                        accusantium. Laboriosam voluptatem, in est quod sint
-                        officia qui accusantium id, quis. Ad iusto, quaerat
-                        nobis.
-                      </p>
-                      <ul>
-                        <li>Age: 2 months</li>
-                        <li>Inoculations: none</li>
-                        <li>Diseases: none</li>
-                        <li>Parasites: none</li>
-                      </ul>
-                    </div>
-                    <span class="close">&times;</span>
-                  </div>
+                  </figure>
                 </div>
-              </figure>
-            </div>
-            <div class="col-pets">
-              <figure class="item">
-                <img src="images/cat-timmy.png" alt="animal-shelter" />
-                <figcaption class="desc">
-                  <div class="name text-center">
-                    <span>Timmy</span>
-                  </div>
-                  <div class="button">
-                    <a
-                      href="#"
-                      class="learn-more popup-show"
-                      data-popup="#pop5-in"
-                      >Learn More</a
-                    >
-                  </div>
-                </figcaption>
-                <div class="popup-wrap hide" id="pop5-in">
-                  <div class="popup-content">
-                    <div class="popup-left">
-                      <img src="images/cat-timmy.png" alt="animal-shelter" />
+                <div class="col-pets">
+                  <figure class="item">
+                    <img src="images/cat-timmy.png" alt="animal-shelter" />
+                    <figcaption class="desc">
+                      <div class="name text-center">
+                        <span>Timmy</span>
+                      </div>
+                      <div class="button">
+                        <a
+                          href="#"
+                          class="learn-more popup-show"
+                          data-popup="#pop5-in"
+                          >Learn More</a
+                        >
+                      </div>
+                    </figcaption>
+                    <div class="popup-wrap hide" id="pop5-in">
+                      <div class="popup-content">
+                        <div class="popup-left">
+                          <img
+                            src="images/cat-timmy.png"
+                            alt="animal-shelter"
+                          />
+                        </div>
+                        <div class="popup-right">
+                          <h2>Timmy</h2>
+                          <span>Breed</span>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Rerum incidunt, minus qui corrupti, omnis
+                            accusantium. Laboriosam voluptatem, in est quod sint
+                            officia qui accusantium id, quis. Ad iusto, quaerat
+                            nobis.
+                          </p>
+                          <ul>
+                            <li>Age: 2 months</li>
+                            <li>Inoculations: none</li>
+                            <li>Diseases: none</li>
+                            <li>Parasites: none</li>
+                          </ul>
+                        </div>
+                        <span class="close">&times;</span>
+                      </div>
                     </div>
-                    <div class="popup-right">
-                      <h2>Timmy</h2>
-                      <span>Breed</span>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Rerum incidunt, minus qui corrupti, omnis
-                        accusantium. Laboriosam voluptatem, in est quod sint
-                        officia qui accusantium id, quis. Ad iusto, quaerat
-                        nobis.
-                      </p>
-                      <ul>
-                        <li>Age: 2 months</li>
-                        <li>Inoculations: none</li>
-                        <li>Diseases: none</li>
-                        <li>Parasites: none</li>
-                      </ul>
-                    </div>
-                    <span class="close">&times;</span>
-                  </div>
+                  </figure>
                 </div>
-              </figure>
-            </div>
-            <div class="col-pets">
-              <figure class="item">
-                <img src="images/dog-charly.jpg" alt="animal-shelter" />
-                <figcaption class="desc">
-                  <div class="name text-center">
-                    <span>Charly</span>
-                  </div>
-                  <div class="button">
-                    <a
-                      href="#"
-                      class="learn-more popup-show"
-                      data-popup="#pop6-in"
-                      >Learn More</a
-                    >
-                  </div>
-                </figcaption>
-                <div class="popup-wrap hide" id="pop6-in">
-                  <div class="popup-content">
-                    <div class="popup-left">
-                      <img src="images/dog-charly.jpg" alt="animal-shelter" />
+                <div class="col-pets">
+                  <figure class="item">
+                    <img src="images/dog-charly.jpg" alt="animal-shelter" />
+                    <figcaption class="desc">
+                      <div class="name text-center">
+                        <span>Charly</span>
+                      </div>
+                      <div class="button">
+                        <a
+                          href="#"
+                          class="learn-more popup-show"
+                          data-popup="#pop6-in"
+                          >Learn More</a
+                        >
+                      </div>
+                    </figcaption>
+                    <div class="popup-wrap hide" id="pop6-in">
+                      <div class="popup-content">
+                        <div class="popup-left">
+                          <img
+                            src="images/dog-charly.jpg"
+                            alt="animal-shelter"
+                          />
+                        </div>
+                        <div class="popup-right">
+                          <h2>Charly</h2>
+                          <span>Breed</span>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Rerum incidunt, minus qui corrupti, omnis
+                            accusantium. Laboriosam voluptatem, in est quod sint
+                            officia qui accusantium id, quis. Ad iusto, quaerat
+                            nobis.
+                          </p>
+                          <ul>
+                            <li>Age: 2 months</li>
+                            <li>Inoculations: none</li>
+                            <li>Diseases: none</li>
+                            <li>Parasites: none</li>
+                          </ul>
+                        </div>
+                        <span class="close">&times;</span>
+                      </div>
                     </div>
-                    <div class="popup-right">
-                      <h2>Charly</h2>
-                      <span>Breed</span>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Rerum incidunt, minus qui corrupti, omnis
-                        accusantium. Laboriosam voluptatem, in est quod sint
-                        officia qui accusantium id, quis. Ad iusto, quaerat
-                        nobis.
-                      </p>
-                      <ul>
-                        <li>Age: 2 months</li>
-                        <li>Inoculations: none</li>
-                        <li>Diseases: none</li>
-                        <li>Parasites: none</li>
-                      </ul>
-                    </div>
-                    <span class="close">&times;</span>
-                  </div>
+                  </figure>
                 </div>
-              </figure>
-            </div>
-            <div class="col-pets">
-              <figure class="item">
-                <img src="images/dog-scarlett.jpg" alt="animal-shelter" />
-                <figcaption class="desc">
-                  <div class="name text-center">
-                    <span>Scarlett</span>
-                  </div>
-                  <div class="button">
-                    <a
-                      href="#"
-                      class="learn-more popup-show"
-                      data-popup="#pop7-in"
-                      >Learn More</a
-                    >
-                  </div>
-                </figcaption>
-                <div class="popup-wrap hide" id="pop7-in">
-                  <div class="popup-content">
-                    <div class="popup-left">
-                      <img src="images/dog-scarlett.jpg" alt="animal-shelter" />
+                <div class="col-pets">
+                  <figure class="item">
+                    <img src="images/dog-scarlett.jpg" alt="animal-shelter" />
+                    <figcaption class="desc">
+                      <div class="name text-center">
+                        <span>Scarlett</span>
+                      </div>
+                      <div class="button">
+                        <a
+                          href="#"
+                          class="learn-more popup-show"
+                          data-popup="#pop7-in"
+                          >Learn More</a
+                        >
+                      </div>
+                    </figcaption>
+                    <div class="popup-wrap hide" id="pop7-in">
+                      <div class="popup-content">
+                        <div class="popup-left">
+                          <img
+                            src="images/dog-scarlett.jpg"
+                            alt="animal-shelter"
+                          />
+                        </div>
+                        <div class="popup-right">
+                          <h2>Scarlett</h2>
+                          <span>Breed</span>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Rerum incidunt, minus qui corrupti, omnis
+                            accusantium. Laboriosam voluptatem, in est quod sint
+                            officia qui accusantium id, quis. Ad iusto, quaerat
+                            nobis.
+                          </p>
+                          <ul>
+                            <li>Age: 2 months</li>
+                            <li>Inoculations: none</li>
+                            <li>Diseases: none</li>
+                            <li>Parasites: none</li>
+                          </ul>
+                        </div>
+                        <span class="close">&times;</span>
+                      </div>
                     </div>
-                    <div class="popup-right">
-                      <h2>Scarlett</h2>
-                      <span>Breed</span>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Rerum incidunt, minus qui corrupti, omnis
-                        accusantium. Laboriosam voluptatem, in est quod sint
-                        officia qui accusantium id, quis. Ad iusto, quaerat
-                        nobis.
-                      </p>
-                      <ul>
-                        <li>Age: 2 months</li>
-                        <li>Inoculations: none</li>
-                        <li>Diseases: none</li>
-                        <li>Parasites: none</li>
-                      </ul>
-                    </div>
-                    <span class="close">&times;</span>
-                  </div>
+                  </figure>
                 </div>
-              </figure>
-            </div>
-            <div class="col-pets">
-              <figure class="item">
-                <img src="images/cat-fred.png" alt="animal-shelter" />
-                <figcaption class="desc">
-                  <div class="name text-center">
-                    <span>Freddie</span>
-                  </div>
-                  <div class="button">
-                    <a
-                      href="#"
-                      class="learn-more popup-show"
-                      data-popup="#pop8-in"
-                      >Learn More</a
-                    >
-                  </div>
-                </figcaption>
-                <div class="popup-wrap hide" id="pop8-in">
-                  <div class="popup-content">
-                    <div class="popup-left">
-                      <img src="images/cat-fred.png" alt="animal-shelter" />
+                <div class="col-pets">
+                  <figure class="item">
+                    <img src="images/cat-fred.png" alt="animal-shelter" />
+                    <figcaption class="desc">
+                      <div class="name text-center">
+                        <span>Freddie</span>
+                      </div>
+                      <div class="button">
+                        <a
+                          href="#"
+                          class="learn-more popup-show"
+                          data-popup="#pop8-in"
+                          >Learn More</a
+                        >
+                      </div>
+                    </figcaption>
+                    <div class="popup-wrap hide" id="pop8-in">
+                      <div class="popup-content">
+                        <div class="popup-left">
+                          <img src="images/cat-fred.png" alt="animal-shelter" />
+                        </div>
+                        <div class="popup-right">
+                          <h2>Freddie</h2>
+                          <span>Breed</span>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Rerum incidunt, minus qui corrupti, omnis
+                            accusantium. Laboriosam voluptatem, in est quod sint
+                            officia qui accusantium id, quis. Ad iusto, quaerat
+                            nobis.
+                          </p>
+                          <ul>
+                            <li>Age: 2 months</li>
+                            <li>Inoculations: none</li>
+                            <li>Diseases: none</li>
+                            <li>Parasites: none</li>
+                          </ul>
+                        </div>
+                        <span class="close">&times;</span>
+                      </div>
                     </div>
-                    <div class="popup-right">
-                      <h2>Freddie</h2>
-                      <span>Breed</span>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Rerum incidunt, minus qui corrupti, omnis
-                        accusantium. Laboriosam voluptatem, in est quod sint
-                        officia qui accusantium id, quis. Ad iusto, quaerat
-                        nobis.
-                      </p>
-                      <ul>
-                        <li>Age: 2 months</li>
-                        <li>Inoculations: none</li>
-                        <li>Diseases: none</li>
-                        <li>Parasites: none</li>
-                      </ul>
-                    </div>
-                    <span class="close">&times;</span>
-                  </div>
+                  </figure>
                 </div>
-              </figure>
+              </div>
+              <div class="go-to-page">
+                <ul>
+                  <li><a href="#" class="page">1</a></li>
+                  <li><a href="#" class="page">2</a></li>
+                  <li><a href="#" class="page">3</a></li>
+                  <li><a href="#" class="page">...</a></li>
+                  <li><a href="#" class="page">10</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="go-to-page">
-            <ul>
-              <li><a href="#" class="page">1</a></li>
-              <li><a href="#" class="page">2</a></li>
-              <li><a href="#" class="page">3</a></li>
-              <li><a href="#" class="page">...</a></li>
-              <li><a href="#" class="page">10</a></li>
-            </ul>
-          </div>
-        </div>
           </div>
         </section>
       </main>
@@ -443,5 +482,21 @@
       </footer>
     </div>
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/mmenu.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#my-menu").mmenu({
+          extensions: ["affect-menu-slide", "pagedim-black"]
+        });
+        let api = $("#my-menu").data("mmenu");
+        api.bind("open:finish", function() {
+          $(".hamburger").addClass("is-active");
+        });
+        api.bind("close:before", function() {
+          $(".hamburger").removeClass("is-active");
+        });
+      });
+    </script>
   </body>
 </html>

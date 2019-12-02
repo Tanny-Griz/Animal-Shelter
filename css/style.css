@@ -26,8 +26,22 @@ body {
     min-width: 320px;
 }
 
-.menu {
+.header-menu {
     display: none;
+}
+
+.burger {
+    position: absolute;
+    top: 30px;
+    right: 10%;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: #fff;
+}
+
+.dark-burger .hamburger-inner, .dark-burger .hamburger-inner::before, .dark-burger .hamburger-inner::after {
+    background-color:#444;
 }
 
 .text-center {
@@ -43,7 +57,6 @@ img {
 
 .holder-menu {
     display: flex;
-    justify-content: center;
     padding: 20px 0;
 }
 
@@ -277,13 +290,17 @@ i {
 
 .popup-left {
     width: 50%;
-    padding: 5% 0;
+    padding: 5%;
 }
 
 .popup-right {
     text-align: left;
     width: 50%;
-    padding: 0 10px;
+    padding: 5%;
+}
+
+.popup-right p {
+    font-size: 12px;
 }
 
 .popup-content .close {
@@ -300,6 +317,14 @@ i {
 }
 
 /* end MODAL */
+
+/* FANCYBOX */
+
+.inner-modal {
+    display: flex;
+}
+
+/* end FANCYBOX */
 
 /* ABOUT */
 
@@ -403,7 +428,7 @@ h2 {
 
 .multiple-items .item {
     padding: 10px 5px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .multiple-items .button {
@@ -515,12 +540,16 @@ i {
 }
 
 .slick-next {
-    right: 16px;
+    right: 19px;
 }
 
 .slick-prev {
-    left: 6px;
+    left: 19px;
     z-index: 2;
+}
+
+.contacts h2 {
+    text-align: left;
 }
 
 /* end ABOUT */
@@ -549,6 +578,10 @@ i {
 
     i {
         font-size: 20px;
+    }
+
+    .col-pets {
+        width: 33.33%;
     }
 
     figcaption {
@@ -590,10 +623,6 @@ i {
         width: 150px;
     }
 
-    .contacts h2 {
-        text-align: left;
-    }
-
     .holder-help {
         padding: 15px 0;
     }
@@ -606,7 +635,11 @@ i {
         justify-content: space-between;
     }
 
-    .menu {
+    .burger {
+        display: none;
+    }
+
+    .header-menu {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -645,7 +678,7 @@ i {
         border-bottom: 3px solid #f7df59;
     }
 
-    .menu a:hover {
+    .header-menu a:hover {
         border-bottom: 3px solid #f7df59;
     }
 
@@ -659,6 +692,10 @@ i {
 
     .popup-content p {
         font-size: 15px;
+    }
+
+    .popup-right p {
+        font-size: 14px;
     }
 
     .popup-content ul li {
@@ -764,6 +801,7 @@ i {
 
     .multiple-items .item {
         width: 200px;
+        margin: 0 auto;
     }
 
     .item-help {
@@ -779,7 +817,7 @@ i {
 }
 
 @media screen and (min-width: 1024px) {
-    .menu {
+    .header-menu {
         justify-content: flex-end;
     }
 
@@ -869,6 +907,7 @@ i {
 
     .multiple-items .item {
         width: 272px;
+        margin: 0 auto;
     }
 
     .holder-looking-pets {
