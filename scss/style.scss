@@ -355,7 +355,7 @@ i {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-    width: 95%;
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
     background-color: #fff;
@@ -410,9 +410,6 @@ i {
             color: #000;
             cursor: pointer;
         }
-    }
-    @media screen and (min-width: 1024px) {
-        width: 60%;
     }
 }
 
