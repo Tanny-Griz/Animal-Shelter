@@ -35,8 +35,6 @@ img {
       justify-content: flex-end;
       align-items: center;
       width: 65%; } }
-  .header-menu a:hover {
-    border-bottom: 3px solid #f7df59; }
   @media screen and (min-width: 1024px) {
     .header-menu {
       justify-content: flex-end; } }
@@ -280,7 +278,7 @@ i {
   justify-content: center;
   align-content: stretch;
   align-items: center;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -606,10 +604,9 @@ i {
     font-size: 0;
     list-style: none;
     padding: 0; }
-  nav li .active {
-    border-bottom: 3px solid #f7df59; }
-    nav li .active:hover {
-      border: none; }
+  nav li {
+    display: inline-block;
+    text-align: center; }
   nav a {
     display: inline-block;
     vertical-align: top;
@@ -618,7 +615,9 @@ i {
     font-size: 16px;
     font-weight: 300; }
     nav a:hover {
-      color: #838383; } }
+      color: #838383;
+      margin-bottom: -3px;
+      border-bottom: 3px solid #f7df59; } }
   @media screen and (min-width: 768px) and (min-width: 1024px) {
     nav a {
       padding: 11px 10px;
